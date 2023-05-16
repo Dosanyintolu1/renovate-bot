@@ -10,25 +10,16 @@ module.exports = {
     // schedule: ["every weekend"],
     packageRules: [
         {
-            matchPackageNames: ["hashicorp/terraform"],
-            groupName: "terraform",
+            "matchPackageNames": ["hashicorp/terraform"],
+            "groupName": "terraform",
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"], 
+            "automerge": true,
+            "autoApprove": true,
+            "updateLockFiles": true,
+            "lockFileMaintenance": { "enabled": true }
         }
     ],
     // Managers https://docs.renovatebot.com/modules/manager/#enabling-and-disabling-managers
     enabledManagers: ["terraform"],
-    lockFileMaintenance: {
-        enabled: true,
-        automerge: true
-    },
-    updateLockFiles: true,
-    minor: {
-        automerge: true
-    },
-    patch: {
-        automerge: true
-    },
-    pin: {
-        automerge: true
-    },
-    repositories: ['cdcent/data-exchange-infra','cdcent/cdc-coe-emmanuel-test-repo'],
+    repositories: ['renovate-bot']
 };
