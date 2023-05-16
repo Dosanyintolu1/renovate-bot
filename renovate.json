@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+  "extends": [ "config:base" ],
+  "matchPackageNames": ["hashicorp/terraform"],
+  "groupName": "terraform",
+  "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+  "automerge": true,
+  "autoApprove": true,
+  "updateLockFiles": true,
+  "lockFileMaintenance": { "enabled": true }       
 }
