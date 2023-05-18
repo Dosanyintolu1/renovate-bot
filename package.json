@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "renovate": "^34.0.0"
+    "renovate": "^34.0.0",
+    "automerge": true,
+    "autoApprove": true
   },
   "scripts": {
     "renovate": "renovate --token $(./get-github-app-token.sh)"
