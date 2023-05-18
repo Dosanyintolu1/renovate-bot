@@ -8,6 +8,4 @@ module.exports = {
     labels: ["renovatebot"],
     enabledManagers: ["terraform"],
     repositories: ['renovate-bot'],
-    autoApprove: true,
-    automerge: true
 };
