@@ -1,13 +1,13 @@
 {
   "extends": ["config:base"],
-  packageRules: [
+  "packageRules": [
     {
-            "groupName": "terraform",
-            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-            "automerge": true,
-            "autoApprove": true,
-            "updateLockFiles": true,
-            "lockFileMaintenance": { "enabled": true }
-        }
-    ]
+      "groupName": "terraform",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "autoApprove": true,
+      "updateLockFiles": true,
+      "lockFileMaintenance": { "enabled": true }
+    }
+   ]
 }
