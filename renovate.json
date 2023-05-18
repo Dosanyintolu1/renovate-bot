@@ -9,5 +9,7 @@
       "updateLockFiles": true,
       "lockFileMaintenance": { "enabled": true }
     }
-   ]
+   ],
+  "automerge": true,
+  "autoApprove": true
 }
