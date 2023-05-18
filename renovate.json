@@ -9,5 +9,5 @@
             "updateLockFiles": true,
             "lockFileMaintenance": { "enabled": true }
         }
-    ],
+    ]
 }
