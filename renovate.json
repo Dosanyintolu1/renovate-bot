@@ -11,6 +11,7 @@
     }
    ],
   "automerge": true,
-  "automergeSchedule": ["after 3:15pm"],
+  "automergeSchedule": ["after 3:20pm"],
+  "timezone": "EST",
   "autoApprove": true
 }
