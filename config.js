@@ -7,5 +7,5 @@ module.exports = {
     onboardingConfig: { extends: ['config:base',':rebaseStalePrs'] },
     labels: ["renovatebot"],
     enabledManagers: ["terraform"],
-    repositories: ['renovate-bot'],
+    repositories: ['renovate-bot']
 };
