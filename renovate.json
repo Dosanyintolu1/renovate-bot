@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "terraform",
-      "matchUpdateTypes": ["dependencies"],
+      "matchUpdateTypes": ["dependencies", "patch", "pin", "digest", "minor"],
       "automerge": true,
       "autoApprove": true,
       "updateLockFiles": true,
