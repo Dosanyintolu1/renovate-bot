@@ -2,11 +2,9 @@
   "onboardingConfig": { "extends": ["config:base"] },
   "packageRules": [
     {
-      "groupName": "terraform",
-      "matchUpdateTypes": ["dependencies", "patch", "pin", "digest", "minor"],
+      "matchUpdateTypes": ["patch", "pin", "digest", "minor"],
       "automerge": true,
       "autoApprove": true,
-      "updateLockFiles": true,
       "lockFileMaintenance": { "enabled": true }
     }
    ],
