@@ -11,6 +11,6 @@
     }
    ],
   "automerge": true,
-  "automergeSchedule": ["after 3:12pm"]
+  "automergeSchedule": ["after 3:15pm"],
   "autoApprove": true
 }
