@@ -1,0 +1,25 @@
+name: Run RenovateBot
+
+on:
+  schedule:
+    # https://crontab.guru/every-hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  renovate:
+    runs-on:  [self-hosted, renovatebot]
+    environment:
+      name: test-bot
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run
+        run: |
+          echo "Downloading Github App private key..."
+          echo "${{ secrets.RENOVATE_TEST_BOT }}" > app-private-key.pem
+          
+          npm run renovate
