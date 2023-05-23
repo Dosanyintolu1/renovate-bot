@@ -1,6 +1,6 @@
 module.exports = {
-    username: "dosanyintolu",
-    gitAuthor: "Self-hosted Renovate Bot <doyin.osanyintolu@gmail.com>",
+    username: "dosanyintolu1[bot]",
+    gitAuthor: "Renovate bot <123456+doyinsola1[bot]@users.noreply.github.com>",
     platform: 'github',
     dependencyDashboard: true,
     onboardingConfig: {
@@ -21,5 +21,5 @@ module.exports = {
     ],
     // Managers https://docs.renovatebot.com/modules/manager/#enabling-and-disabling-managers
     enabledManagers: ["terraform"],
-    repositories: ['renovate-bot']
+    repositories: ['dosanyintolu1/renovate-bot']
 };

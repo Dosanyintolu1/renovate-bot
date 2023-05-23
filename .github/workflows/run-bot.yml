@@ -12,7 +12,7 @@ on:
 
 jobs:
   renovate:
-    runs-on:  [ubuntu-latest, renovatebot]
+    runs-on:  [self-hosted, renovatebot]
     environment:
       name: test-bot
     steps:
