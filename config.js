@@ -21,5 +21,5 @@ module.exports = {
     ],
     // Managers https://docs.renovatebot.com/modules/manager/#enabling-and-disabling-managers
     enabledManagers: ["terraform"],
-    repositories: ['renovate-bot']
+    repositories: ['Dosanyintolu1/renovate-bot']
 };
