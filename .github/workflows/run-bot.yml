@@ -18,3 +18,5 @@ jobs:
     if: github.actor == 'renovate/**'
     steps:
       - uses: hmarr/auto-approve-action@v3
+        with:
+          github-token: ${{ secrets.RENOVATE_TEST_BOT }}
