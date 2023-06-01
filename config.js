@@ -1,11 +1,11 @@
 
 module.exports = {
-    username: "test-bot",
-    gitAuthor: "Self-hosted Renovate Bot <123456+test-bot@users.noreply.github.enterprise.com>",
+    username: "dosanyintolu1[bot]",
+    gitAuthor: "Renovate bot <123456+doyinsola1[bot]@users.noreply.github.com>",
     platform: 'github',
     dependencyDashboard: true,
     onboardingConfig: { extends: ['config:base',':rebaseStalePrs'] },
     labels: ["renovatebot"],
     enabledManagers: ["terraform"],
-    repositories: ['renovate-bot']
+    repositories: ['dosanyintolu1/renovate-bot']
 };
