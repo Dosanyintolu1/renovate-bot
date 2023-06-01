@@ -1,25 +1,12 @@
-name: Run RenovateBot
+name: Auto approve
 
-on:
-  schedule:
-    # https://crontab.guru/every-hour
-    - cron: '0 * * * *'
-  workflow_dispatch:
-  pull_request:
-  push:
-#    branches:
-#      - main
+on: pull_request_target
 
 jobs:
-  renovate:
-    runs-on:  [self-hosted, renovatebot]
-    environment:
-      name: test-bot
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: github.actor == 'renovate*'
     steps:
-      - uses: actions/checkout@v3
-      - name: Run
-        run: |
-          echo "Downloading Github App private key..."
-          echo "${{ secrets.RENOVATE_TEST_BOT }}" > app-private-key.pem
-          
-          npm run renovate
+      - uses: hmarr/auto-approve-action@v3
