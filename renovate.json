@@ -1,0 +1,15 @@
+{
+  "onboardingConfig": { "extends": ["config:base"] },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "pin", "digest", "minor"],
+      "automerge": true,
+      "autoApprove": true,
+      "lockFileMaintenance": { "enabled": true }
+    }
+   ],
+  "automerge": true,
+  "automergeSchedule": ["before 3:38pm everyday"],
+  "timezone": "EST",
+  "autoApprove": true
+}
