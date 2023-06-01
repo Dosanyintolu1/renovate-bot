@@ -6,6 +6,8 @@ on:
        - opened
      branches:
        - 'renovate/**' 
+       - 'main'
+       - 'doyin'
 
 jobs:
   auto-approve:
