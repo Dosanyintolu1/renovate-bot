@@ -1,0 +1,19 @@
+name: Auto approve
+
+on: 
+  pull_request_target:
+     types:
+       - opened
+     branches:
+       - 'renovate/**' 
+       - 'main'
+       - 'doyin'
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: github.actor == 'renovate/**'
+    steps:
+      - uses: hmarr/auto-approve-action@v3
