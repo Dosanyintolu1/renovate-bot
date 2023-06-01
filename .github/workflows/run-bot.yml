@@ -1,8 +1,8 @@
 name: Auto approve
 
 on: 
-  #push:
-  pull_request_target:
+  push:
+  pull_request:
      types:
        - opened
      branches:
