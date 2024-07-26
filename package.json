@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "renovate": "^36.0.0",
+    "renovate": "^38.0.0",
     "automerge": true
   },
   "scripts": {
